@@ -9,6 +9,37 @@
 
 <body>
     <h1><a href="WEB1 - Welcome.html">WEB</a></h1>
+    
+    <input id="night_day" type="button" value="night" onclick="
+                var target = document.querySelector('body');
+                if(this.value === 'night'){
+                  target.style.backgroundColor = 'black';
+                  target.style.color = 'white';
+                  this.value = 'day';
+        
+                  var alist = document.querySelectorAll('a');
+                  var i = 0;
+                  while(i < alist.length){
+                  console.log(alist[i]);
+                  alist[i].style.color = 'powderblue';
+                  i = i + 1;
+                  } 
+                } 
+                else {
+                  target.style.backgroundColor = 'white';
+                  target.style.color = 'black';
+                  this.value = 'night';
+        
+                  var alist = document.querySelectorAll('a');
+                  var i = 0;
+                  while(i < alist.length){
+                  console.log(alist[i]);
+                  alist[i].style.color = 'blue';
+                  i = i + 1;
+                }
+            }
+    ">
+
     <div id = "grid">
     <ol>
         <li><a href="WEB1 - html.html">HTML</a></li>
@@ -17,12 +48,21 @@
     </ol>
     <div id = "article">
     <h2>WEB이란 무엇인가?</h2>
-    <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources
+
+    <p>
+        The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources
         are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the
         Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web
         browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released
         outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public
         on the Internet in August 1991.
+    </p>
+
+    <p>
+        월드 와이드 웹(약칭 WWW 또는 웹)은 문서 및 기타 웹 리소스가 URL(유니폼 리소스 로케이터)에 의해 식별되고 하이퍼텍스트 링크로 연결되며 인터넷을 통해 액세스할 수 있는 정보 공간입니다.
+        영국 과학자 팀 버너스 리는 1989년에 월드 와이드 웹을 발명했습니다.
+        그는 스위스 CERN에서 근무하던 1990년에 최초의 웹 브라우저 컴퓨터 프로그램을 작성했습니다.
+        웹 브라우저는 1991년에 CERN 외부에 처음 출시되었으며, 1991년 1월부터 다른 연구 기관에, 1991년 8월에는 인터넷에서 일반 대중에게 공개되었습니다.
     </p>
     </div>
     </div>
